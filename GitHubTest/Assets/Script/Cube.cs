@@ -16,7 +16,8 @@ public class Cube : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        num += Time.deltaTime;
+        
+        num += Time.deltaTime*2;
         transform.position = pos + new Vector3(0,Mathf.Sin(num),0);
     }
 }
